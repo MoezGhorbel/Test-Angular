@@ -1,0 +1,17 @@
+<div class="formList">
+  <div *ngFor="let post of posts">
+    <ul class="list">
+      <li><span>Title:&nbsp;</span>{{ post.title }}</li>
+      <li><span>Category:&nbsp;</span>{{ post.categories }}</li>
+      <li><span>Description:&nbsp;</span>{{ post.description }}</li>
+      <li><span>Date de publication:&nbsp;</span>{{ post.date }}</li>
+    </ul>
+    <div class="btn-group">
+      <button type="button" mat-raised-button color="warn" (click)="deletePost(post.id)">Supprimer</button>
+      <button type="button" mat-raised-button color="accent" (click)="updatePost(post.id)">Modifier</button>
+    </div>
+    <hr>
+  </div>
+  <br>
+  <button type="button" mat-raised-button color="primary" matTooltip="Add a new post" (click)="addPost()">Add</button>
+</div>

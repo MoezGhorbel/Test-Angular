@@ -1,0 +1,22 @@
+.formList {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group {
+    float: right;
+    padding: 5px;
+    margin: 10px o;
+}
+
+button {
+    margin-left: 4px;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+}

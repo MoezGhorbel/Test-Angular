@@ -1,0 +1,21 @@
+<form class="form" [formGroup]="FormUpdatePost" (ngSubmit)="updatePost()">
+    <mat-form-field class="title-full-width">
+        <mat-label>Titre</mat-label>
+        <input matInput placeholder="Enter post title here" formControlName="title">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Choose an option</mat-label>
+        <mat-select formControlName="categories">
+            <mat-option value="culture">Culture</mat-option>
+            <mat-option value="economy">Économie</mat-option>
+            <mat-option value="society">Société</mat-option>
+            <mat-option value="sport">Sport</mat-option>
+            <mat-option value="technology">Technologies</mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field class="description-full-width">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Enter post text here" formControlName="description"></textarea>
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary">Done</button>
+</form>
